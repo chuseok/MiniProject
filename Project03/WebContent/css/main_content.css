@@ -1,0 +1,33 @@
+.table-type1 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 0.5;
+    width: 100%;
+    height: 275px;
+}
+.table-type1 thead {
+    border-right: 1px solid #ccc;
+    /* 적용이 안됨 */
+    border-left: 1px solid #ccc;
+    background: white;
+}
+.table-type1 thead th {
+	padding: 6px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 1px solid #717171;
+}
+.table-type1 tbody td {
+    padding: 6px;
+    vertical-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-type1 tbody tr:last-of-type td:last-of-type {
+    text-align: center;
+    border: none;
+}
+a, a:link, a:visited {
+	color: #369;
+}

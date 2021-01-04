@@ -1,0 +1,34 @@
+@charset "UTF-8";
+ .checked {
+    color: orange;
+    }
+    .wrap{
+    max-width: 480px;
+    margin: 0 auto; /* 화면 가운데로 */
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+    .reviewform textarea{
+      width: 100%;
+      padding: 10px; margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .fa fa-star{
+      font-size: 40px;
+      cursor:pointer;
+    }
+    #save{ 
+      margin: 4px 1px; width: 70px; font-size: 15px;
+    } 
+    .cmd {
+      float: right;
+    }
+    .rateGender{
+      font-size: 16px; float: left; padding: 2px;
+    }
+    .rateAge{
+      font-size: 15px; padding: 2px;
+    }

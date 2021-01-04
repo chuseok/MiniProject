@@ -1,0 +1,73 @@
+.table-type1 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+}
+.table-type1 thead {
+    border-right: 1px solid #ccc;
+    /* Àû¿ëÀÌ ¾ÈµÊ */
+    border-left: 1px solid #ccc;
+    background: white;
+}
+.table-type1 thead th {
+	padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+.table-type1 tbody td {
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table {
+	width: 100%;
+    border-top: 1px solid #717171;
+    border-collapse: collapse;
+}
+
+.input-short {
+	text-align:"center";
+}
+.input-long {
+	width: 80px;
+	text-align:"center";
+}
+.input-msg {
+	width: 100px;
+	height: 80px;
+	text-align:"center";
+}
+.button-group1 button{
+	background-color: #717171;
+	border: 1px solid;
+	color: white; 
+	padding: 5px;
+}
+.button-group1 button:hover{ 
+	color:white; 
+	background-color: #303960;
+}
+.button-1 {
+	width: 60px;
+	height: 30px;
+	margin-right: -6.5px;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px;
+
+}
+.button-2 {
+	width: 60px;
+	height: 30px;
+	margin-right: -6.5px;
+
+}
+.button-3 {
+	width: 60px;
+	height: 30px;
+	margin-right: -7px;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px;
+
+}

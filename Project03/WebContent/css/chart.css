@@ -1,0 +1,161 @@
+.input-date {
+  padding: 2px;
+  width: 150px;
+  height: 30px;/* not working */
+  padding: .8em .5em; /* 여백으로 높이 설정 */
+  font-family: inherit;  /* 폰트 상속 */
+  border: 1px solid #999;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #717171;
+  color: white;
+
+}
+.date-section {
+  display: block;
+  width: 100%;
+}
+
+.date-menu {
+  text-align: center;
+  
+}
+.label {
+  width: 200px;
+  display: inline-block;
+  padding:20px;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 24px;
+  border-bottom: #ccc 2px solid;
+}
+
+.date-section >input:nth-of-type(1) {
+  display: none;
+}
+.date-section >input:nth-of-type(1)~div:nth-of-type(2) {
+  display: none;
+}
+.date-section >input:nth-of-type(1):checked~div:nth-of-type(2) {
+  display: block;
+}
+.date-section >input:nth-of-type(1):checked~div:nth-of-type(1) > div label:nth-of-type(1) {
+  border-bottom: #303960 2px solid;
+  color: #4e2b0b;
+}
+
+.date-section >input:nth-of-type(2) {
+  display: none;
+}
+.date-section >input:nth-of-type(2)~div:nth-of-type(3) {
+  display: none;
+}
+.date-section >input:nth-of-type(2):checked~div:nth-of-type(3) {
+  display: block;
+}
+.date-section >input:nth-of-type(2):checked~div:nth-of-type(1) > div label:nth-of-type(2) {
+  border-bottom: #303960 2px solid;
+  color: #4e2b0b;
+}
+
+/* nav3 */
+.date-section >input:nth-of-type(3) {
+  display: none;
+}
+.date-section >input:nth-of-type(3)~div:nth-of-type(4) {
+  display: none;
+}
+.date-section >input:nth-of-type(3):checked~div:nth-of-type(4) {
+  display: block;
+}
+.date-section >input:nth-of-type(3):checked~div:nth-of-type(1) > div label:nth-of-type(3) {
+  border-bottom: #303960 2px solid;
+  color: #4e2b0b;
+}
+
+/* date-submenu */
+.date-submenu {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto; 
+  margin-top: 50px;
+}
+
+.date-submenu > section {
+  text-align: left;
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sub_title {
+  text-align: left;
+}
+
+.menu-name {
+  display: inline-block;
+}
+.menu-name p {
+  height: 20px;
+}
+.menu-price {
+  display: inline-block;
+}
+.menu-price p {
+  height: 20px;
+}
+/* select-box */
+.select-box1 {
+  background-color: #717171;
+  color: white;
+  padding: 2px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  font-size: 13px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+.select-box1::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.select-box1:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.select-box1 select option {
+  padding: 30px;
+}
+/* input-submit */
+.select-button {
+	width:60px;
+	height:30px;
+	color:white; 
+	background-color: #717171;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	
+}
+.select-button:hover {
+	color:white; 
+	background-color: #303960;
+
+}

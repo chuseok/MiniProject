@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cozima Review</title>
+<link rel="stylesheet" href="css/ReviewFrm.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/ReviewFrm.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<h1>리뷰</h1>
+		<form class="reviewform" name="reviewform" method="post"
+			action="reviewPro.jsp" onsubmit="return checkForm(); result();">
+			<input type="hidden" name="rate" id="rate" value="0" />
+			<p class="title_star">별점과 리뷰를 남겨주세요.</p>
+			<div class="review_rating">
+				<div class="rating">
+					<input type="hidden" name="starRate" /> <span
+						onmouseover="starmark(this)" onclick="starmark(this)" id="1one"
+						style="font-size: 40px; cursor: pointer;"
+						class="fa fa-star checked"></span> <input type="hidden" value="">
+					<span onmouseover="starmark(this)" onclick="starmark(this)"
+						id="2one" style="font-size: 40px; cursor: pointer;"
+						class="fa fa-star"></span> <span onmouseover="starmark(this)"
+						onclick="starmark(this)" id="3one"
+						style="font-size: 40px; cursor: pointer;" class="fa fa-star"></span>
+					<span onmouseover="starmark(this)" onclick="starmark(this)"
+						id="4one" style="font-size: 40px; cursor: pointer;"
+						class="fa fa-star"></span> <span onmouseover="starmark(this)"
+						onclick="starmark(this)" id="5one"
+						style="font-size: 40px; cursor: pointer;" class="fa fa-star"></span>
+					<br />
+				</div>
+			</div>
+			<div class="review">
+				<textarea rows="4" name="comment" class="review_textarea"
+					id="comment" placeholder="4자 이상 작성해주세요."></textarea>
+			</div>
+			<div class="rateGender">
+				성별 <select name="rateGender">
+					<option value="남">남자</option>
+					<option value="여">여자</option>
+				</select>
+			</div>
+			<div>
+				&nbsp &nbsp 나이 <select name="rateAge" class="rateAge">
+					<option value="10대">10대</option>
+					<option value="20대">20대</option>
+					<option value="30대">30대</option>
+					<option value="40대">40대</option>
+					<option value="50대 이상">50대 이상</option>
+				</select>
+			</div>
+			<div class="cmd">
+				<input type="submit" name="save" id="save" value="등록">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
