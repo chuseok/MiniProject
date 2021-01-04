@@ -1,0 +1,52 @@
+/* gallery */
+.info-gallery{
+	position: realative;
+	margin: 20px;
+}
+
+.gallery-pictures{
+	float:left;
+	width:300px;
+	height:350px;
+	margin: 8px 12px;
+}
+
+.gallery-pictures img{
+	width:300px;
+	height:300px;
+}
+
+.gallery-pictures a:link{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-size:18px;
+}
+
+.gallery-pictures a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.gallery-pictures a:hover {
+  color: #e79c2a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.select-button {
+	width:60px;
+	height:30px;
+	color:white; 
+	background-color: #717171;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	
+}
+.select-button:hover {
+	color:white; 
+	background-color: #303960;
+
+}

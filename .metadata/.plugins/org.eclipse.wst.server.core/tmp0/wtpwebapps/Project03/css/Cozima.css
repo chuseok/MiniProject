@@ -1,0 +1,537 @@
+/* initialize */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  transition-property: color;
+  transition-duration: 0.7s;
+  color:#d49466;;
+}
+
+.container {
+  width: 100%; margin: 30px auto;
+}
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+}
+
+
+/*header*/
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+  background: #263343;
+  transition: top 0.2s ease-in-out;
+}
+.header-title {
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+#header-name {
+  font-size: 40px; 
+  font-weight:200;
+  font-family: 'Dancing Script', cursive;
+  padding: 12px;
+  padding-top:15px;
+}
+
+.nav {
+  text-align: right;
+  /* 주석 해야 될 수도 있음 */
+  /* border-bottom: 1px solid red; */
+  line-height: 70px;
+}
+.nav-up {
+  top: -100px;
+  transition: 0.45s;
+}
+#toggle {
+  display: none;
+}
+.nav > label {
+  margin-bottom:40px;
+  font-size: 26px;
+  line-height: 100px;
+  color: white;
+  display: none;
+  width: 26px;
+  float: right;
+}
+.menu {
+  margin: 0 100px 0 0;
+}
+.menu > a:hover {
+  transition-property: font-size;
+  transition-duration: 0.8s;
+  font-size: 18px;
+}
+
+.menu > a {  
+  margin: 0 10px; font-size: 20px;
+	font-family: 'Karla', sans-serif;
+}
+
+
+/*banner*/
+.p-banner {
+  display: flex; flex-direction:column;
+  width: 100%; height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: big john; margin: 12px 0;
+}
+.banner-text {
+  font-size: 50px; color: #fff; 
+}
+.text-underline {
+  width: 300px; height: 2px; background-color:  #fff; position: relative;
+}
+.text-underline::after {
+  content: ""; position: absolute; left: 0;
+  width: 85px; background-color: burlywood; height: 4px; top: -1px;
+}
+
+.p-banner {
+	background-size: cover;
+}
+#section_Hello {
+	background-image: url(../images/top.jpg);
+  background-attachment: fixed;  
+  height: 500px;
+  text-align: center; text-shadow: 2px 2px #434343;
+}
+#section_Menu {
+	background-image: url(../images/menu.jpg);
+  background-attachment: fixed;  
+  height: 400px; opacity: 0.9;
+}
+#section_Contact {
+	background-image: url(../images/contact.jpg);
+  height: 400px;
+}
+#section_Reservation {
+	background-image: url(../images/reservation.jpg);
+  height: 400px; opacity: 0.8;
+    background-attachment: fixed;  
+  
+}
+
+
+/*introduce*/
+
+.container_intro {
+  width: 800px; height: 600px; margin: 50px auto;
+}
+.section_intro {
+  display: flex; flex-direction: row;
+  align-items: center; justify-content: center;
+}
+.contents-img {
+  padding: 10px;
+}
+.contents-text {
+  width: 360px;
+  padding: 15px 10px; text-align: center;
+}
+.contents-text p {
+  padding: 14px 0px; font-size: 20px;
+  font-family: 'Roboto', sans-serif; color: #3a3a3a;
+}
+.contents-text h4 {
+  padding: 8px 0px; font-size: 26px; font-weight: lighter;
+  font-family: 'Oswald', sans-serif; color: #434343;
+  margin: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+  .container_intro {
+    width: 600px; height: 900px; margin: 10px auto;
+  }
+  .section_intro {
+    display: flex; flex-direction: column;
+    align-items: center;
+  }
+  .contents-img {
+    padding: 5px;
+  }
+  .contents-text {
+    width: 500px;
+    padding: 5px 0px; text-align: center;
+  }
+}
+
+
+/*menu*/
+.main-section {
+  display: block;
+  position: relative;
+  background-color: burlywood;
+  width: 100%;
+  height: 1000px;
+}
+.eat-section {
+  display: block;
+  width: 100%;
+}
+.eat-menu {
+  text-align: center;
+  
+}
+.eat-menu-label {
+  width: 200px;
+  display: inline-block;
+  padding:20px;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 24px;
+  border-bottom: #ccc 2px solid;
+}
+
+
+/* eat-section */
+/* nav1 */
+.eat-section >input:nth-of-type(1) {
+  display: none;
+}
+.eat-section >input:nth-of-type(1)~div:nth-of-type(2) {
+  display: none;
+}
+.eat-section >input:nth-of-type(1):checked~div:nth-of-type(2) {
+  display: block;
+}
+.eat-section >input:nth-of-type(1):checked~div:nth-of-type(1) > div label:nth-of-type(1) {
+  border-bottom: #D3A246 2px solid;
+  color: #4e2b0b;
+}
+
+/* nav2 */
+.eat-section >input:nth-of-type(2) {
+  display: none;
+}
+.eat-section >input:nth-of-type(2)~div:nth-of-type(3) {
+  display: none;
+}
+.eat-section >input:nth-of-type(2):checked~div:nth-of-type(3) {
+  display: block;
+}
+.eat-section >input:nth-of-type(2):checked~div:nth-of-type(1) > div label:nth-of-type(2) {
+  border-bottom: #D3A246 2px solid;
+  color: #4e2b0b;
+}
+
+/* nav3 */
+.eat-section >input:nth-of-type(3) {
+  display: none;
+}
+.eat-section >input:nth-of-type(3)~div:nth-of-type(4) {
+  display: none;
+}
+.eat-section >input:nth-of-type(3):checked~div:nth-of-type(4) {
+  display: block;
+}
+.eat-section >input:nth-of-type(3):checked~div:nth-of-type(1) > div label:nth-of-type(3) {
+  border-bottom: #D3A246 2px solid;
+  color: #4e2b0b;
+}
+
+
+/* eat-submenu */
+.eat-submenu {
+  text-align: center;
+  width: 800px;
+  display: inline-block;
+  margin: 0 auto; 
+  margin-top: 50px;
+  color: #434343;
+}
+
+.eat-submenu > section {
+  text-align: left;
+  margin: 40px 20px 0 20px;
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sub_title {
+  text-align: left;
+}
+
+.my-line{
+  float: left;
+  width: 320px; height: 1px; background-color: #4e2b0b;; margin: 10px auto;
+  position: relative;
+}
+.my-line::after {
+  float: left;
+  content: "";
+  width: 85px; position: absolute; background-color: #D3A246;
+  height: 3px; margin-top: -1px; left: 0;
+}
+
+.menu-name {
+  display: inline-block;
+}
+.menu-name p {
+  height: 20px;
+}
+.menu-price {
+	float: right;
+  display: inline-block;
+}
+.menu-price p {
+  height: 20px;
+}
+
+/* media query */
+@media only screen and (max-width: 1000px) {
+  .nav > label {
+      display: block;
+      cursor: pointer;
+      
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .menu a {
+      clear: right;
+      display: block;
+      width: 200px;
+      height: 70px;
+      float: right;
+      border-bottom: 1px solid #434343;
+      margin: 0;
+      background: black;
+  }
+  #toggle:checked + .menu {
+      display: block;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .header-title {
+      text-align: center;
+      font-size: 40px;
+  }
+  header {
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+  
+  }
+  #header-name {
+    font-size: 30px; padding: 5px; margin-top: 10px;
+  }
+  .nav {
+      margin: auto;
+      /* 이거 없애면 nav 사이즈 꽉참 */
+  }
+
+  .nav > label {
+      float: none;
+      margin: 0 auto;
+      line-height: 70px;
+      display: none;
+      height: 75px;
+      width: 26px;
+      display: block;
+      cursor: pointer;
+
+  }
+  .menu a {
+      width: 100%;
+
+  }
+  .eat-menu-label {
+      width: 80px;
+  
+  }
+  .eat-submenu {
+      width: 500px;
+  }
+  
+  .eat-submenu > section {
+      margin: 40px 0;
+      width: 250px;
+      height: 200px;
+  }
+
+  .my-line{
+      width: 250px; height: 1px; 
+    }
+  .my-line::after {
+      width: 60px;
+    }
+  
+}
+
+
+
+/*contact*/
+.section_Contact {
+  display: flex; margin: 10px auto; 
+  width: 820px; height: 650px;
+  align-items: center; 
+}
+
+.text_block>ul {
+  list-style: none; width: 190px; height: 80px;
+  margin: 5px 0;
+}
+.text_block>ul>li>h4,p {
+  margin: 0px; padding: 2px;
+	font-family: 'Karla', sans-serif;
+}
+.map {
+  overflow: hidden; 
+}
+
+@media screen and (max-width:768px) {
+  .container_Contact {
+    width: 500px; margin: 10px auto; height: 660px;
+  }
+  .section_Contact {
+    padding: 0px; display: flex; flex-direction: column;
+    width: 400px; margin: 5px auto;
+    align-content: center;
+  }
+  .text_block {
+    float: left; text-align: center;
+    width:190px; height: 70px; margin:20px 0; padding: 20px 5px;
+    font-weight: normal;
+    font-size:20px;
+  }
+  .text_block>ul>li>h4,p {
+    margin: 2px; padding: 2px; 
+  }
+  .map {
+    overflow: hidden; margin: 20px;
+    width: 400px; height:400px;
+  }
+}
+
+
+/*reservation*/
+div{
+  display: block;
+    }
+
+.reservation{
+  position: relative;
+  margin: auto;
+  padding: 3.5%;
+  display: flex; flex-direction: column;
+  box-sizing: border-box;
+  }
+.container__reserv{
+    margin: 1px auto; padding: 0 12px;
+    width: 450px; height: 750px;
+}
+.h2{
+  margin-bottom: 3%; margin-left: 8px;
+  font-size: 30PX; padding: 5px;
+  color: #434343;
+}
+.reservation-content {
+  margin-left: 10px;
+}
+.table__inp{
+  font-size: 15px;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 5px; margin: 0 4px;  
+  display: block;
+  width: 95%; height: 40px;
+  background-color: white;
+}
+.submit{
+  margin-top: 1.5rem;
+  font-size: 16px;
+  text-align: center;
+  width: 90px; height: 40px;
+  background-color: #d49466;
+  border-radius: 7px;
+  border-color:white;    
+}
+.table__text{
+  color: #d49466;
+  margin-top: 10px;
+}
+textarea {
+  resize: none; margin-left: 3px; padding: 4px;
+  font-size: 15px; width: 95%; height: 60px;
+}
+#table-No {
+  width: 50%;
+}
+
+
+
+/*footer*/
+
+footer {
+  display: flex; width: 100%; flex-shrink: 0; flex-direction: column;
+  height: 240px; margin: 0 auto;
+  text-align: center; color: white;  background-color: #263343;
+}
+.footer-intro {
+  display: flex; width: 70%; padding: 10px 0; margin: 5px auto; text-align: center;
+  padding-top: 20px;
+}
+.footer-intro>ul {
+  list-style: none; margin: 0 auto; 
+}
+.footer-intro>ul>li {
+  padding: 3px 0; font-size: 16px;
+}
+address {
+  font-style: normal;
+}
+.footer-sns {
+  list-style: none; width: 152px; display: flex; margin: 2px auto;
+  padding: 0; 
+}
+.footer-sns li {
+  padding: 8px 12px; font-size: 30px;
+}
+
+@media screen and (max-width:768px) {
+footer {
+  height: 200px;
+}
+  .footer-intro>ul {
+    list-style: none; padding: 0; margin: 2px auto; height: 80px;
+  }
+  .footer-intro>ul>li {
+    padding:1px auto; font-size: 16px; align-items: center;
+  }
+  .footer-intro>ul>li p {
+    display: none;
+  }
+  .footer-sns {
+    list-style: none; width: 130px; display: flex; margin: 2px auto;
+    padding: 0;
+  }
+  .footer-sns li {
+    padding: 3px 8px; font-size: 30px; margin: 0 auto;
+  } 
+}
