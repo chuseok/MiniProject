@@ -1,4 +1,4 @@
-# MiniProject
+# 식당 예약 프로젝트
 
 > Restaurant Reservation and Management System Mini web project
 
